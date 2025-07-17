@@ -1,0 +1,33 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "NameTag Plus",
+    "description": "Attempts to set player.nameTag via script",
+    "uuid": "29e0dc4c-f378-4f60-9a2b-529f7f5185cf",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "f3f42940-1e67-4e8b-9e8e-c49f8c61a85f",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    }
+  ],
+  "metadata": {
+    "authors": ["CmdHebiSensei（コマへび先生）"],
+    "license": "CC0 1.0 Universal (Public Domain Dedication)"
+  }
+}
