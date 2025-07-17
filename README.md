@@ -45,6 +45,7 @@ In Education Edition, anyone can change names with a name tag due to API limitat
 - `player.json` の `"allow_name_tag_renaming"` を `false` にすると、名札での変更を無効化できます  
 - 名前変更は**ダイアログ経由のみに制限**されます  
 - `_edu` のファイルがその設定済みバージョンです（`releases` にあります）
+- ※教育版をご利用の方は、[こちらの導入手順](./INSTALL_EDU.md)をご覧ください。
 
 ---
 
