@@ -10,7 +10,7 @@
  * You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
  */
 
-import { world } from "@minecraft/server";
+import { world, system } from "@minecraft/server";
 import {
   rememberPreviousNames,
   applyDisplayNameFormat,
@@ -22,6 +22,19 @@ import {
   RENAME_ITEM_TYPE,
   RENAME_ITEM_NAME
 } from "./config.js";
+
+// /scriptevent name_tag_plus:show_rename_dialog でダイアログを表示
+system.afterEvents.scriptEventReceive.subscribe((event) => {
+  if (event.id === "name_tag_plus:show_rename_dialog") {
+    const user = event.sourceEntity;
+    if (!user) return;
+
+    // 変更権限の判定
+    if (RENAME_PERMISSION_TAG !== "" && !user.hasTag(RENAME_PERMISSION_TAG)) return;
+
+    showRenameDialog(user);
+  }
+});
 
 // 表示名変更アイテムを使用したらダイアログを表示
 world.afterEvents.itemUse.subscribe((event) => {

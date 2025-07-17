@@ -21,4 +21,4 @@ export const RENAME_ITEM_NAME = "表示名変更アイテム"
  * {custonName} : 表示名
  */
 export const CUSTOM_NAME_FORMAT = "\n{customName}";  // ２行表示
-// const CUSTOM_NAME_FORMAT = "（{customName}）"; // 括弧書き表示
+// export const CUSTOM_NAME_FORMAT = "（{customName}）"; // 括弧書き表示

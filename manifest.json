@@ -4,7 +4,7 @@
     "name": "NameTag Plus",
     "description": "Attempts to set player.nameTag via script",
     "uuid": "29e0dc4c-f378-4f60-9a2b-529f7f5185cf",
-    "version": [1, 0, 0],
+    "version": [1, 0, 2],
     "min_engine_version": [1, 21, 0]
   },
   "modules": [
